@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("Take a Quiz")]
-[assembly: AssemblyDescription("Take a Quiz")]
+[assembly: AssemblyDescription("Take a Quiz - let you memorize words more efficiently.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Yang")]
 [assembly: AssemblyProduct("Take a Quiz")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyCopyright("Copyright Yang ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
