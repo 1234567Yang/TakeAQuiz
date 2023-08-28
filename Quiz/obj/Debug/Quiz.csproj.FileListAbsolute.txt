@@ -14,7 +14,6 @@ C:\000Project\Quiz\Quiz\Quiz\obj\Debug\Quiz.Form4.resources
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\bin\Debug\Quiz.exe.config
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\bin\Debug\Quiz.exe
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\bin\Debug\Quiz.pdb
-C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.csproj.AssemblyReference.cache
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.Form1.resources
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.Form2.resources
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.Form3.resources
@@ -24,3 +23,4 @@ C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.csproj.GenerateRes
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.csproj.CoreCompileInputs.cache
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.exe
 C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.pdb
+C:\000Project\Quiz\Quiz_Project\TakeAQuiz\Quiz\obj\Debug\Quiz.csproj.AssemblyReference.cache
