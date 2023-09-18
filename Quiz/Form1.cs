@@ -144,6 +144,8 @@ namespace Quiz
             quizFile = textBox1.Text;
 
             WriteFile();
+
+            Message.ICO.ChangeICO(this);
             //this.Icon = Properties.Resources.LOGO; form1删掉了
         }
 
@@ -249,6 +251,13 @@ namespace Quiz
             public static void showHit(string text)
             {
                 MessageBox.Show(text, "Hit:", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        static class ICO
+        {
+            public static void ChangeICO(Form form)
+            {
+                form.Icon = Properties.Resources.LOGO;
             }
         }
     }

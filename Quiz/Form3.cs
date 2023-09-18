@@ -128,6 +128,8 @@ namespace Quiz
                 area.AxisX.Minimum = 0;
             }
 
+            Message.ICO.ChangeICO(this);
+
         }
 
         private void Change_Time(object sender, EventArgs e)

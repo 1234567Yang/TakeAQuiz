@@ -410,6 +410,8 @@ namespace Quiz
             //    Console.WriteLine(random.Next(0, answersWithoutDeleting.Count));
             //}
             setOneQuestion();
+
+            Message.ICO.ChangeICO(this);
         }
 
         private void AnswerSelected_ButtonClick(object sender, EventArgs e)

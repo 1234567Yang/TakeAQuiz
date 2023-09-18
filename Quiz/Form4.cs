@@ -181,6 +181,8 @@ namespace Quiz
         {
             RecordToChar();
             //Save();
+
+            Message.ICO.ChangeICO(this);
         }
 
         private void listView1_KeyPress(object sender, KeyPressEventArgs e)
