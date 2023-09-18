@@ -35,6 +35,7 @@ namespace Quiz
             this.label_rnum = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox_bgm = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label_info = new System.Windows.Forms.Label();
             this.button_D = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@ namespace Quiz
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label_time_used = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox_bgm = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,6 +104,16 @@ namespace Quiz
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "question detail";
             // 
+            // checkBox_bgm
+            // 
+            this.checkBox_bgm.AutoSize = true;
+            this.checkBox_bgm.Location = new System.Drawing.Point(563, 376);
+            this.checkBox_bgm.Name = "checkBox_bgm";
+            this.checkBox_bgm.Size = new System.Drawing.Size(114, 17);
+            this.checkBox_bgm.TabIndex = 7;
+            this.checkBox_bgm.Text = "Background music";
+            this.checkBox_bgm.UseVisualStyleBackColor = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -148,7 +158,7 @@ namespace Quiz
             // button_B
             // 
             this.button_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_B.Location = new System.Drawing.Point(381, 145);
+            this.button_B.Location = new System.Drawing.Point(381, 169);
             this.button_B.Name = "button_B";
             this.button_B.Size = new System.Drawing.Size(369, 94);
             this.button_B.TabIndex = 2;
@@ -159,7 +169,7 @@ namespace Quiz
             // button_A
             // 
             this.button_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_A.Location = new System.Drawing.Point(6, 145);
+            this.button_A.Location = new System.Drawing.Point(6, 169);
             this.button_A.Name = "button_A";
             this.button_A.Size = new System.Drawing.Size(369, 94);
             this.button_A.TabIndex = 1;
@@ -169,11 +179,10 @@ namespace Quiz
             // 
             // label_question_name
             // 
-            this.label_question_name.AutoSize = true;
             this.label_question_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_question_name.Location = new System.Drawing.Point(9, 27);
             this.label_question_name.Name = "label_question_name";
-            this.label_question_name.Size = new System.Drawing.Size(137, 25);
+            this.label_question_name.Size = new System.Drawing.Size(741, 139);
             this.label_question_name.TabIndex = 0;
             this.label_question_name.Text = "The question";
             this.label_question_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -220,16 +229,6 @@ namespace Quiz
             this.label5.Size = new System.Drawing.Size(98, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "total time used (s) : ";
-            // 
-            // checkBox_bgm
-            // 
-            this.checkBox_bgm.AutoSize = true;
-            this.checkBox_bgm.Location = new System.Drawing.Point(563, 376);
-            this.checkBox_bgm.Name = "checkBox_bgm";
-            this.checkBox_bgm.Size = new System.Drawing.Size(114, 17);
-            this.checkBox_bgm.TabIndex = 7;
-            this.checkBox_bgm.Text = "Background music";
-            this.checkBox_bgm.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 

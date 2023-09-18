@@ -1,0 +1,13 @@
+C:\000Project\Quiz\TakeAQuiz\Quiz\bin\Release\Quiz.exe.config
+C:\000Project\Quiz\TakeAQuiz\Quiz\bin\Release\Quiz.exe
+C:\000Project\Quiz\TakeAQuiz\Quiz\bin\Release\Quiz.pdb
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.csproj.AssemblyReference.cache
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.Form1.resources
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.Form2.resources
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.Form3.resources
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.Form4.resources
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.Properties.Resources.resources
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.csproj.GenerateResource.cache
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.csproj.CoreCompileInputs.cache
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.exe
+C:\000Project\Quiz\TakeAQuiz\Quiz\obj\Release\Quiz.pdb

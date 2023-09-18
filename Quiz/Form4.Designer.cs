@@ -69,6 +69,7 @@ namespace Quiz
             // 
             // richTextBox_a
             // 
+            this.richTextBox_a.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox_a.Location = new System.Drawing.Point(437, 21);
             this.richTextBox_a.Name = "richTextBox_a";
             this.richTextBox_a.Size = new System.Drawing.Size(332, 86);
@@ -78,6 +79,7 @@ namespace Quiz
             // 
             // richTextBox_q
             // 
+            this.richTextBox_q.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox_q.Location = new System.Drawing.Point(52, 21);
             this.richTextBox_q.Name = "richTextBox_q";
             this.richTextBox_q.Size = new System.Drawing.Size(332, 86);

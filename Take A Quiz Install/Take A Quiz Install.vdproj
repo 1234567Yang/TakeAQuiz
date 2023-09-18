@@ -15,8 +15,14 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_3F865491BA804152A3A5704DC2CDC9E5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5143FECEB5B9ACA319CE43C3E7A2613C"
-        "OwnerKey" = "8:_9FAA857E1BE14E398AE887A412257D7D"
+        "OwnerKey" = "8:_3F865491BA804152A3A5704DC2CDC9E5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -27,20 +33,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_9FAA857E1BE14E398AE887A412257D7D"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9FAA857E1BE14E398AE887A412257D7D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_5143FECEB5B9ACA319CE43C3E7A2613C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3F865491BA804152A3A5704DC2CDC9E5"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -245,15 +245,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Take A Quiz"
-        "ProductCode" = "8:{A4E7C035-DBBA-46F2-97C6-9239B38181D6}"
-        "PackageCode" = "8:{0D61C1D0-2502-4EDB-BB92-C5328BBD75DB}"
+        "ProductCode" = "8:{4D045FD0-B17A-4EDA-A6A5-3802BD540AD1}"
+        "PackageCode" = "8:{B21A6774-2F43-427A-8C37-DB454FE34DDF}"
         "UpgradeCode" = "8:{410EB8BD-7B7D-4F29-9DEF-569DBD69D605}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.1.00"
         "Manufacturer" = "8:Yang"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/1234567Yang/TakeAQuiz"
@@ -366,15 +366,15 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A1196BA77FA0411B82F8262623F1B899"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1291AE1A315C4D4997ACADC7F2948BF7"
             {
-            "Name" = "8:Take A Quiz"
+            "Name" = "8:Take a Quiz"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_9FAA857E1BE14E398AE887A412257D7D"
+            "Target" = "8:_3F865491BA804152A3A5704DC2CDC9E5"
             "Folder" = "8:_4E52627F4B1646E1A8375D2742B630B8"
             "WorkingFolder" = "8:_EA37BD8142744BD78F746BF0DB7C9595"
             "Icon" = "8:_7C084C06447E4272A5438ADFF26AC3A4"
@@ -779,9 +779,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9FAA857E1BE14E398AE887A412257D7D"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3F865491BA804152A3A5704DC2CDC9E5"
             {
-            "SourcePath" = "8:..\\Quiz\\obj\\Debug\\Quiz.exe"
+            "SourcePath" = "8:..\\Quiz\\obj\\Release\\Quiz.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_EA37BD8142744BD78F746BF0DB7C9595"
