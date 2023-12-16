@@ -13,7 +13,7 @@ using System.IO;
 
 namespace Quiz
 {
-    public partial class Form1 : Form
+    public partial class StartWindow : Form
     {
         public static string quizFile;
         public static void checkAccess(string file)
@@ -117,7 +117,7 @@ namespace Quiz
                 Environment.Exit(3);
             }
         }
-        public Form1()
+        public StartWindow()
         {
             InitializeComponent();
         }
@@ -136,7 +136,7 @@ namespace Quiz
             }
 
             //CreateForm(Form2);
-            CreateForm<Form2>(); //奇怪的泛型...
+            CreateForm<QuizingWindow>(); //奇怪的泛型...
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -166,7 +166,7 @@ namespace Quiz
                 Message.dialog.showHit("File does not exist!");
                 return;
             }
-            CreateForm<Form3>();
+            CreateForm<DataWindow>();
         }
 
 
@@ -218,7 +218,7 @@ namespace Quiz
             }
 
 
-            CreateForm<Form4>();
+            CreateForm<MakingQuizWindow>();
 
         }
 

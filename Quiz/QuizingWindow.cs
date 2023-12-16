@@ -13,7 +13,7 @@ using System.Media;
 
 namespace Quiz
 {
-    public partial class Form2 : Form
+    public partial class QuizingWindow : Form
     {
         private List<Button> ABCDButton = new List<Button>();
         private int RightAnswer = 0;
@@ -30,7 +30,7 @@ namespace Quiz
 
         private List<(string, string)> RecordingWrongAnswer = new List<(string, string)>();
 
-        public Form2()
+        public QuizingWindow()
         {
             InitializeComponent();
         }
@@ -205,7 +205,7 @@ namespace Quiz
             //}
             TempQuizFile = StartWindow.quizFile; //***************************--***************************
             StartWindow.quizFile = StartWindow.quizFile + $".{DateTime.UtcNow.Ticks.ToString()}.WrongQuesions.txt";
-            Form4 form4 = new Form4();
+            MakingQuizWindow form4 = new MakingQuizWindow();
             form4.Visible = false;
             foreach ((string, string) oneQA in RecordingWrongAnswer)
             {

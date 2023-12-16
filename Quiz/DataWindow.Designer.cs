@@ -1,7 +1,7 @@
 ﻿
 namespace Quiz
 {
-    partial class Form3
+    partial class DataWindow
     {
         /// <summary>
         /// Required designer variable.

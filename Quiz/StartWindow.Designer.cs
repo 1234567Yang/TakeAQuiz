@@ -1,7 +1,7 @@
 ﻿
 namespace Quiz
 {
-    partial class Form1
+    partial class StartWindow
     {
         /// <summary>
         /// 必需的设计器变量。

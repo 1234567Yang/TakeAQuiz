@@ -1,7 +1,7 @@
 ﻿
 namespace Quiz
 {
-    partial class Form4
+    partial class MakingQuizWindow
     {
         /// <summary>
         /// Required designer variable.

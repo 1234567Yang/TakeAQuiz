@@ -11,13 +11,13 @@ using System.Windows.Forms;
 using System.IO;
 namespace Quiz
 {
-    public partial class Form4 : Form
+    public partial class MakingQuizWindow : Form
     {
         private bool saved = true;
         private List<(ListViewItem, int)> Ctrl_Z = new List<(ListViewItem, int)>();//有一点元组
         private void RecordToChar()
         {
-            string Text_ = File.ReadAllText(Form1.quizFile);
+            string Text_ = File.ReadAllText(StartWindow.quizFile);
             if (Text_ == "")
             {
                 return; //如果是新建的文件
@@ -159,7 +159,7 @@ namespace Quiz
 
             try
             {
-                File.WriteAllText(Form1.quizFile, QAFile);
+                File.WriteAllText(StartWindow.quizFile, QAFile);
             }
             catch(Exception ex)
             {
@@ -172,7 +172,7 @@ namespace Quiz
             return true;
             
         }
-        public Form4()
+        public MakingQuizWindow()
         {
             InitializeComponent();
         }
