@@ -35,15 +35,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(4, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(396, 13);
+            this.label1.Size = new System.Drawing.Size(803, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Your computer has been locked down, please finish the quiz or enter the password";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(7, 21);
+            this.textBox1.Location = new System.Drawing.Point(9, 47);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(306, 20);
             this.textBox1.TabIndex = 1;
@@ -60,6 +61,7 @@
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.No;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LockWindow";
@@ -68,7 +70,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "s";
             this.TopMost = true;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LockWindow_FormClosing);
             this.Load += new System.EventHandler(this.LockWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

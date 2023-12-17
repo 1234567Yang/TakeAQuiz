@@ -15,6 +15,7 @@ namespace Quiz
 {
     public partial class QuizingWindow : Form
     {
+        public Action finishClosingAct;
         private List<Button> ABCDButton = new List<Button>();
         private int RightAnswer = 0;
         private int RightChoice_Button = 0;
@@ -95,6 +96,7 @@ namespace Quiz
         }
         private void InitializeQuiz()
         {
+
 
             try
             {
@@ -218,7 +220,7 @@ namespace Quiz
             StartWindow.quizFile = TempQuizFile; //***************************--***************************
 
         }
-        private bool FinishedQuiz() //里面有个找不出来的bug，直接放弃
+        private bool FinishedQuiz()
         {
             recording_end();
             WriteWrongQuestionToFile();
@@ -266,15 +268,9 @@ namespace Quiz
             //----------判断是否完成----------
             if (Questions.Count == 0)
             {
-                if (FinishedQuiz() == false)
-                {
-                    this.Close();
-                    return;
-                }
-                else
-                {
-                    InitializeQuiz();
-                }
+                FinishedQuiz();
+                this.Close();
+                return;
             }
 
             //----------判断是否完成----------
@@ -385,7 +381,6 @@ namespace Quiz
         private void Form2_Load(object sender, EventArgs e)
         {
 
-
             //#if DEBUG
             //            timer1.Enabled = false;
             //#endif
@@ -413,7 +408,6 @@ namespace Quiz
 
             Message.ICO.ChangeICO(this);
         }
-
         private void AnswerSelected_ButtonClick(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button;
@@ -427,10 +421,22 @@ namespace Quiz
             }
         }
 
-
+        private void CancleClose(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             label_time_used.Text = (int.Parse(label_time_used.Text) + 1).ToString();
+        }
+
+        private void QuizingWindow_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (sender != this) e.Cancel = true;
+            else
+            {
+                finishClosingAct?.Invoke();
+            }
         }
     }
 }

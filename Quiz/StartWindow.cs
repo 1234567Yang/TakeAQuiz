@@ -9,13 +9,25 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.IO;
-
+using System.Threading;
 
 namespace Quiz
 {
     public partial class StartWindow : Form
     {
-        public static string quizFile;
+        private static string file = "";
+        public static string quizFile
+        {
+            get
+            {
+                return file;
+            }
+            set
+            {
+                file = value;
+            }
+        }
+
         public static void checkAccess(string file)
         {
             Console.WriteLine($"First:{file}");
@@ -24,7 +36,7 @@ namespace Quiz
             try
             {
 
-                
+
                 File.WriteAllText(textFile, $"Access check passed - UTC: {DateTime.UtcNow}");
             }
             catch
@@ -34,9 +46,9 @@ namespace Quiz
             }
         }
         public static int checkInput() // 0 - empty; 1 - file existed; 2 - directory existed;
-                                 // 3 - directory / file not existed
-                                 // 4 - 胡编乱造（不存在的目录）
-                                 // If no access to the file, the program will close;
+                                       // 3 - directory / file not existed
+                                       // 4 - 胡编乱造（不存在的目录）
+                                       // If no access to the file, the program will close;
         {
             if (quizFile == "")
             {
@@ -69,7 +81,7 @@ namespace Quiz
         {
             TForm form = Activator.CreateInstance<TForm>(); //Activator来创建一个实例
 
-            form.FormClosed += (sender_, e_) => //拉姆达表达式（看文档 + 盲猜的用法，竟然过编译器了）
+            form.FormClosed += (sender_, e_) =>
             {
                 this.Show();
             };
@@ -83,7 +95,7 @@ namespace Quiz
             //List<string> SoundFile = Directory.GetFiles("C:\\ProgramData\\TakeAQuiz\\","*.wav").ToList();
             try
             {
-                if(!Directory.Exists("C:\\ProgramData\\TakeAQuiz\\")) Directory.CreateDirectory("C:\\ProgramData\\TakeAQuiz\\");
+                if (!Directory.Exists("C:\\ProgramData\\TakeAQuiz\\")) Directory.CreateDirectory("C:\\ProgramData\\TakeAQuiz\\");
 
                 if (!File.Exists("C:\\ProgramData\\TakeAQuiz\\Music1.wav"))
                 {
@@ -110,7 +122,7 @@ namespace Quiz
 
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Message.dialog.showError("Can not create and write to the floder:C:\\ProgramData\\TakeAQuiz\\");
                 Message.dialog.showError(ex);
@@ -146,6 +158,8 @@ namespace Quiz
             WriteFile();
 
             Message.ICO.ChangeICO(this);
+
+
             //this.Icon = Properties.Resources.LOGO; form1删掉了
         }
 
@@ -208,7 +222,7 @@ namespace Quiz
                         Message.dialog.showError("The program has no access to your file, please run as administrator");
                         Environment.Exit(1);
                     }
-                    
+
                 }
                 else
                 {
@@ -226,6 +240,17 @@ namespace Quiz
         {
             Environment.Exit(0);
         }
+
+        private void StartWindow_Shown(object sender, EventArgs e)
+        {
+            if (File.Exists(@"C:\ProgramData\Yang\TakeAQuiz\quiz_mod.txt"))
+            {
+                this.Hide();
+                TimingWindow timingWindow = new TimingWindow();
+                timingWindow.ShowDialog();
+            }
+        }
+
     }
 
 

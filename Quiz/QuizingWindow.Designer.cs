@@ -230,7 +230,7 @@ namespace Quiz
             this.label5.TabIndex = 7;
             this.label5.Text = "total time used (s) : ";
             // 
-            // Form2
+            // QuizingWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -247,9 +247,10 @@ namespace Quiz
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form2";
+            this.Name = "QuizingWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Take a quiz - quizzing";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QuizingWindow_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

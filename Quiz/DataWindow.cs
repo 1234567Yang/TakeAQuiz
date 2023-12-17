@@ -14,9 +14,9 @@ using System.IO;
 
 namespace Quiz
 {
-    public partial class Form3 : Form
+    public partial class DataWindow : Form
     {
-        public Form3()
+        public DataWindow()
         {
             InitializeComponent();
         }

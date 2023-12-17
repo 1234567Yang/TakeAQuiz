@@ -65,43 +65,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="TimingWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TimingWindow.Designer.cs">
+      <DependentUpon>TimingWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="LockWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="LockWindow.Designer.cs">
+      <DependentUpon>LockWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="StartWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="StartWindow.Designer.cs">
+      <DependentUpon>StartWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="QuizingWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="QuizingWindow.Designer.cs">
+      <DependentUpon>QuizingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataWindow.Designer.cs">
+      <DependentUpon>DataWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakingQuizWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakingQuizWindow.Designer.cs">
+      <DependentUpon>MakingQuizWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="TimingWindow.resx">
+      <DependentUpon>TimingWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="LockWindow.resx">
+      <DependentUpon>LockWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="StartWindow.resx">
+      <DependentUpon>StartWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="QuizingWindow.resx">
+      <DependentUpon>QuizingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataWindow.resx">
+      <DependentUpon>DataWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakingQuizWindow.resx">
+      <DependentUpon>MakingQuizWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
