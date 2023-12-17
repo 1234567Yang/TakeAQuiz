@@ -72,18 +72,23 @@ namespace Quiz
             e.Cancel = true;
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if(this.textBox1.Text ==password)
+            if (this.textBox1.Text == password)
             {
                 try
                 {
                     File.Delete(@"C:\ProgramData\Yang\TakeAQuiz\quiz_mod.txt");
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show(@"Can not delete auto-quizing file, please delete it by yourself, position: C:\ProgramData\Yang\TakeAQuiz\quiz_mod.txt: " + ex.Message, "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 Environment.Exit(0);
+            }
+            else
+            {
+                this.textBox1.Text = "Incorrect!";
             }
         }
     }

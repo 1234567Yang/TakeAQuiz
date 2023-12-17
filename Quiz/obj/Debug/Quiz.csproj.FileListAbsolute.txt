@@ -52,3 +52,4 @@ C:\C#sourceCode\TakeAQuiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.cache
 C:\C#sourceCode\TakeAQuiz\Quiz\obj\Debug\Quiz.csproj.CoreCompileInputs.cache
 C:\C#sourceCode\TakeAQuiz\Quiz\obj\Debug\Quiz.exe
 C:\C#sourceCode\TakeAQuiz\Quiz\obj\Debug\Quiz.pdb
+C:\C#sourceCode\TakeAQuiz\Quiz\obj\Debug\Quiz.SettingWindow.resources

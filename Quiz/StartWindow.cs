@@ -251,6 +251,22 @@ namespace Quiz
             }
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                File.Create(@"C:\ProgramData\Yang\TakeAQuiz\quiz_mod.txt");
+            }catch(Exception ex)
+            {
+                Message.dialog.showError(ex);
+            }
+            Message.dialog.showHit("Mode opened! Please restart it again. If you want to stop it, please enter your password in exams.");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            CreateForm<SettingWindow>();
+        }
     }
 
 

@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SettingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingWindow.Designer.cs">
+      <DependentUpon>SettingWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="TimingWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SettingWindow.resx">
+      <DependentUpon>SettingWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TimingWindow.resx">
       <DependentUpon>TimingWindow.cs</DependentUpon>
     </EmbeddedResource>

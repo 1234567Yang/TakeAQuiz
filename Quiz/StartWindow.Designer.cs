@@ -36,6 +36,8 @@ namespace Quiz
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -99,19 +101,41 @@ namespace Quiz
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 278);
+            this.label2.Location = new System.Drawing.Point(24, 369);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(537, 13);
+            this.label2.Size = new System.Drawing.Size(357, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "H   a   o   y   a   n   g       L   i       -       Y   a   n   g   2   9   0   6" +
-    "   4   5   5   4   6   8   @   g   m   a   i   l   .   c   o   m";
+            this.label2.Text = "Y   a   n   g   2   9   0   6   4   5   5   4   6   8   @   g   m   a   i   l   ." +
+    "   c   o   m";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(15, 200);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(188, 62);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Setting";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(206, 200);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(188, 62);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Open exam mode";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // StartWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 202);
+            this.ClientSize = new System.Drawing.Size(407, 268);
             this.ControlBox = false;
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -142,6 +166,8 @@ namespace Quiz
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
